@@ -9,19 +9,17 @@ include_once __DIR__ . '/Cat.php';
 include_once __DIR__ . '/Dog.php';
 
 class Products{
-    public $game;
-    public  $food;
-    public $kennels;
+    public $categories;
 
 
-    function __construct(String $game, String $food, String $kennels){
-        $this->game = $game;
-        $this->food = $food;
-        $this->kennels = $kennels;
 
+    function __construct(String $categories){
+        $this->categories = $categories;
     }
 
-
+    public function getProducts(){
+        return $categories;
+    }
 }
 
 ?>
