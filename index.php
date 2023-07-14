@@ -8,12 +8,6 @@ Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, 
 
 
 
-
-
-<?php 
-
-class Products{
-    
-}
-
+<?php
+    include_once __DIR__ . '/classes/Products.php'
 ?>
