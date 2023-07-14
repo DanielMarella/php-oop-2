@@ -9,7 +9,7 @@ Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, 
 
 
 <?php
-    include_once __DIR__ . '/classes/Products.php';
+    include_once __DIR__ . '/db/db.php';
 ?>
 
 
@@ -24,6 +24,32 @@ Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, 
     <title>ShopOnline</title>
 </head>
 <body>
-    <h1>ciaoo</h1>
+
+    <div class="container">
+        <div class="row">
+            <?php foreach ($products as $product) {?>
+            <div class="card col-3 p-0 m-3" >
+                <div class="card-header">
+                    <h2>
+                        <?php echo $product->title?>
+                    </h2>
+                </div>
+                <div class="card-body p-3">
+                    <h5 class="card-title">
+                        <p>Categoria:
+                        <?php echo $product->categories->name; ?>
+                        </p>
+                    </h5>
+                    <h5 class="card-subtitle mb-2 text-muted">
+                        <p>Animale:
+                            <?php echo $product->animals->type; ?>
+                        </p>
+                    </h5>
+                </div>
+            </div>
+            <?php } ?>   
+        </div>
+    </div>
+
 </body>
 </html>
