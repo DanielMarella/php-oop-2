@@ -2,8 +2,8 @@
 
 <?php 
 
-include_once __DIR__ . '/classes/Cat.php'
-include_once __DIR__ . '/classes/Dog.php'
+include_once __DIR__ . '/Cat.php';
+include_once __DIR__ . '/Dog.php';
 
 class Products{
     
