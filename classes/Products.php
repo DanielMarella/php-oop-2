@@ -1,25 +1,20 @@
-<!-- 
-L'e-commerce vende prodotti per animali.
-I prodotti sono categorizzati, le categorie sono Cani o Gatti.
- -->
 
-<?php 
-
-include_once __DIR__ . '/Cat.php';
-include_once __DIR__ . '/Dog.php';
+<?php
 
 class Products{
+
+    public $title;
+    public $animals;
     public $categories;
 
 
-
-    function __construct(String $categories){
-        $this->categories = $categories;
-    }
-
-    public function getProducts(){
-        return $categories;
+    function __construct(String $title, Animal $animals, Category $category){
+        $this->title = $title;
+        $this->animals = $animals;
+        $this->categories = $category;
     }
 }
+
+
 
 ?>
